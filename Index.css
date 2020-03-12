@@ -1,5 +1,5 @@
 body {
-    font-family: "lora", 'Lato', sans-serif;
+    font-family: "lora", 'Lato', sans-serif;  
 }
 h1 {
     font-size: 3rem;
@@ -32,10 +32,15 @@ a:hover, a:active {
     align-items: center;
     height: 100vh;
     position: relative;
-    background: #eee;
 	text-align: center;
     padding: 0 2em;
-    
+}
+.tabs{
+    background: #eee;
+}
+.headerContainer{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/74/Earth_poster_large.jpg') no-repeat;
+    background-size: 100%;
 }
 
 .linksContainer {
@@ -49,7 +54,6 @@ a:hover, a:active {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #fff;
     justify-content: space-evenly;
-
 }
 
 .links{
@@ -58,9 +62,16 @@ a:hover, a:active {
     align-items: center;
     flex: 1;
     letter-spacing: 0.1rem;
+    font-family: "lora", 'Lato', sans-serif;  
+    font-size: 1.5em;
 }
 
 /*Band*/
+#tab-band{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
 
 /*Band*/
 /*Band*/
