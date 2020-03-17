@@ -8,15 +8,9 @@ h3 {
     font-size: 1rem;
 }   
 
-a:link, a:visited{
-    color:black;
-    text-decoration-line: none;
-   
-  }
-
-a:hover, a:active {
-    color:white;
-  }
+  button:focus, input[type="button"]:focus {
+    outline: none;
+}
 .links:hover {
     background-color:#eee;
     color: white;
@@ -39,8 +33,13 @@ a:hover, a:active {
     background: #eee;
 }
 .headerContainer{
-    background: url('https://upload.wikimedia.org/wikipedia/commons/7/74/Earth_poster_large.jpg') no-repeat;
+    background: url('./images/bandimage.jpeg') no-repeat;
     background-size: 100%;
+}
+.titlesContainer{
+    background-color:white;
+    padding: 10px;
+    border-radius: 35%;
 }
 
 .linksContainer {
@@ -52,8 +51,9 @@ a:hover, a:active {
     width: 100%;
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background:green;
     justify-content: space-evenly;
+    padding:5px;
 }
 
 .links{
@@ -64,17 +64,87 @@ a:hover, a:active {
     letter-spacing: 0.1rem;
     font-family: "lora", 'Lato', sans-serif;  
     font-size: 1.5em;
+    border-radius:35px;
 }
 
 /*Band*/
 #tab-band{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    align-items: center;
+
+}
+#text-band, #image-band{
+    padding: 0px;
+    border-radius: 25px;
+    height:500px;
+    width:600px;
+    background-color:lightcoral;
+    margin:10px;
+
 }
 
-/*Band*/
-/*Band*/
-/*Band*/
+#text-band{
+    background-color:lightcoral;
+}
+#description-band{
+    padding:15px;
+}
+
+
+/*gigs*/
+#tab-gigs{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+
+}
+#logo-images{
+    display: flex;
+    flex-direction: column;
+    background-color:yellow;
+    padding:20px;
+    border-radius:25px;
+}
+#logo-image{
+    width:60px;
+    height:100px;
+}
+#gigs-text{
+    background-color:yellow;
+    padding:10px;
+    margin:50px;
+    justify-self:stretch;
+    border-radius:25px;
+}
+#gigs-info{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+/*music*/
+#songContainer{
+    display:flex;
+    flex-direction:row;
+    background-color:yellow;
+    padding:10px;
+    border-radius:15px;
+}
+/*Merch*/
+#tab-merch{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; 
+}
+#merch-container{
+    border-radius:15px;
+    background-color:yellow;
+    padding:10px;
+}
+#buy-merch{
+        color: black;
+        text-decoration: none;
+}
 /*Band*/
 

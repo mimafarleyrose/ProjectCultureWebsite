@@ -7,6 +7,8 @@
     <title>Project Culture</title>
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="./Images/logo.png">
+
 </head>
 <body>
     <section class="headerContainer" id="tab-home">
@@ -14,35 +16,104 @@
             <h1>Project Culture</h1>
         </div>
         <div class="linksContainer">
-            <button class="links" id="bandLink"><a href="#tab-band">Band</a></button>
-            <button class="links" id="linkslink"><a href="#tab-links">Links</a></button>
-            <button class="links" id="musiclink"><a href="#tab-music">Music</a></button>
-            <button class="links" id="gigslink"><a href="#tab-gigs">Gigs</a></button>
-            <button class="links" id="merchlink"><a href="#tab-merch">Merch</a></button>
-            <button class="links" id="homeLink"><a href="#tab-home">Home</a></button>
+            <button class="links" id="bandLink" onclick="window.location.href='#tab-band'">Band</button>
+            <button class="links" id="musiclink" onclick="window.location.href='#tab-music'">Music</button>
+            <button class="links" id="gigslink" onclick="window.location.href='#tab-gigs'">Gigs</button>
+            <button class="links" id="merchlink" onclick="window.location.href='#tab-merch'">Merch</button>
+            <button class="links" id="homeLink" onclick="window.location.href='#tab-home'">Home</button>
         </div>
     </section>
     <section class="tabsContainer">
         <section class="tabs" id="tab-band">
-            <h1>Band</h1>
-            <h3>meet the band</h3>
-            <img src="Images/astronaut-in-space-compressor.png" alt="astronaut"/>
+            <div id="text-band">
+                <h1 id="title-band">Meet The Band</h1>
+                <h3 id="description-band">Indie Rock band from London, combining a melodic jangle-pop sound with frenzied and impassioned lyrics.</h3>
+            </div>
+                 <img src="./images/bandimage.jpeg" alt="project culture" id="image-band"/>
+
         </section>
-        <section class="tabs" id="tab-links">
-                <h1>Links</h1>
-                <h3>where to find us</h3>
-        </section>
-        <section class="tabs" id="tab-music">
-                <h1>Music</h1>
-                <h3>hear our stuff</h3>
+        <section class="tabs">
+                <div id="tab-music">
+                    <h1>Music</h1>
+                    <h3>Hear our stuff</h3>
+                </div>
+                <div id="songContainer">
+                        <div id="song1">
+                                <h3>Character Actor</h3>
+                                    <img src="./images/album.jpeg" alt="album-cover">
+                                    <audio controls>
+                                            <source src="./audio/characterActor.mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                    </audio>
+                        </div>
+                        <div id="song2">
+                                <h3>Character Actor</h3>
+                                    <img src="./images/album.jpeg" alt="album-cover">
+                                    <audio controls>
+                                            <source src="./audio/characterActor.mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                    </audio>
+                        </div>
+                        <div id="song3">
+                                <h3>Character Actor</h3>
+                                    <img src="./images/album.jpeg" alt="album-cover">
+                                    <audio controls>
+                                            <source src="./audio/characterActor.mp3" type="audio/mpeg">
+                                          Your browser does not support the audio element.
+                                    </audio>
+                        </div>
+                        <div id="song4">
+                            <h3>Character Actor</h3>
+                                <img src="./images/album.jpeg" alt="album-cover">
+                                <audio controls>
+                                        <source src="./audio/characterActor.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio element.
+                                </audio>
+                        </div>
+                </div>
         </section>
         <section class="tabs" id="tab-gigs">
-                <h1>Gigs</h1>
-                <h3>come see us play</h3>
+                <div id="gigs-text">
+                    <div>
+                        <h1>Gigs</h1>
+                        <h3>Come see us play at...</h3>
+                    </div>
+                    <div id="gigs-info">
+                        <div id="gig1">
+                            <h3>Drapers</h3>
+                            <h4>10th April</h4>
+                            <img src="./images/gig1.jpg" alt="gig" width="100px" height="100px"/>
+                            <a href="https://en-gb.facebook.com/ProjectCulture/"><h4>Link</h4></a>
+                        </div>
+                        <div id="gig2">
+                                <h3>Drapers</h3>
+                                <h4>10th April</h4>
+                                <img src="./images/gig2.jpg" alt="gig" width="100px" height="100px"/>
+                                <a href="https://en-gb.facebook.com/ProjectCulture/"><h4>Link</h4></a>
+                        </div>
+                        <div id="gig3">
+                                <h3>Drapers</h3>
+                                <h4>10th April</h4>
+                                <img src="./images/gig3.jpg" alt="gig" width="100px" height="100px"/>
+                                <a href="https://en-gb.facebook.com/ProjectCulture/"><h4>Link</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="logo-images">
+                    <a href="https://soundcloud.com/projectculture" target="_blank"><img src="./Images/soundcloud.png" alt="souncloud" id="logo-image"/></a>
+                    <a href="https://www.instagram.com/projectculture/?hl=en" target="_blank"><img src="./Images/instagram.png" alt="instagram" id="logo-image"/></a>
+                    <a href="https://www.youtube.com/watch?v=mRCdWPjqZYg" target="_blank"><img src="./Images/YouTube.png" alt="YouTube" id="logo-image"/></a>
+                    <a href="https://en-gb.facebook.com/ProjectCulture/" target="_blank"><img src="./Images/facebook.png" alt="facebook" id="logo-image"/></a>
+                </div>
         </section>
         <section class="tabs" id="tab-merch">
-                <h1>Merch</h1>
-                <h3>buy a t-shirt!</h3>
+                <div id="merch-titles">
+                    <h1>Merch</h1>
+                    <a id="buy-merch" href="https://projectculture.bandcamp.com/merch/t-shirt" target="_blank"><h3>Buy a t-shirt!</h3></a>
+                </div>
+                <div id="merch-container">
+                    <img src="./images/merch.jpg" alt="t-shirt"/>
+                <div>
         </section>
     </section>
     
