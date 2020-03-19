@@ -12,15 +12,15 @@
 </head>
 <body>
     <section class="headerContainer" id="tab-home">
-        <div class="titlesContainer">
-            <h1>Project Culture</h1>
-        </div>
         <div class="linksContainer">
             <button class="links" id="bandLink" onclick="window.location.href='#tab-band'">Band</button>
             <button class="links" id="musiclink" onclick="window.location.href='#tab-music'">Music</button>
             <button class="links" id="gigslink" onclick="window.location.href='#tab-gigs'">Gigs</button>
             <button class="links" id="merchlink" onclick="window.location.href='#tab-merch'">Merch</button>
             <button class="links" id="homeLink" onclick="window.location.href='#tab-home'">Home</button>
+        </div>
+        <div class="titlesContainer">
+                <h1>Project Culture</h1>
         </div>
     </section>
     <section class="tabsContainer">
@@ -29,10 +29,13 @@
                 <h1 id="title-band">Meet The Band</h1>
                 <h3 id="description-band">Indie Rock band from London, combining a melodic jangle-pop sound with frenzied and impassioned lyrics.</h3>
             </div>
+        <div id="bandImages">
             <img src="./images/bandimage.jpeg" alt="project culture" id="image-band"/>
+            <img src="./images/bandimage1.jpeg" alt="project culture" id="image-band1"/>
+        </div>
         </section>
-        <section class="tabs">
-                <div id="tab-music">
+        <section class="tabs" id="tab-music">
+                <div id="music-title">
                     <h1>Music</h1>
                     <h3>Hear our stuff</h3>
                 </div>
@@ -110,7 +113,11 @@
                     <h1>Merch</h1>
                     <a id="buy-merch" href="https://projectculture.bandcamp.com/merch/t-shirt" target="_blank"><h3>Buy a t-shirt!</h3></a>
                 </div>
-                    <img src="./images/merch.jpg" alt="t-shirt" id="merch-image"/>
+                <div id="merchImages">
+                    <a id="buy-merch" href="https://projectculture.bandcamp.com/merch/t-shirt" target="_blank">
+                    <img src="./images/outermerch.jpg" alt="t-shirt" id="merchOnHover"/>
+                    <img src="./Images/innermerch.jpg .jpeg" alt="t-shirt" id="merchOriginal"></a>
+                </div>
         </section>
     </section>
     

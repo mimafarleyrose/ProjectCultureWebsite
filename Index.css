@@ -8,21 +8,12 @@ h3 {
     font-size: 1rem;
 }   
 
-  button:focus, input[type="button"]:focus {
-    outline: none;
-}
-.links:hover {
-    background-color:#eee;
-    color: white;
-    cursor: pointer;
-  }
 
 
 .headerContainer,
 .tabs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
@@ -33,56 +24,64 @@ h3 {
     background: #eee;
 }
 .headerContainer{
-    background: url('./images/bandimage.jpeg') no-repeat;
-    background-size: 100%;
-}
-.titlesContainer{
-    background-color:white;
-    padding: 10px;
-    border-radius: 35%;
-}
-
-.linksContainer {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    z-index: 10;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background:none;
-    justify-content: space-evenly;
-    padding:5px;
-}
-
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        background-image:url('./Images/bandpurplebackground.jpg');
+        width: 100%;
+        height: 100vh;
+        background-size: 100%;
+    }
+/* links */
 .links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
     letter-spacing: 0.1rem;
-    font-family: "lora", 'Lato', sans-serif;  
     font-size: 1.5em;
     border-radius:35px;
 }
+.linksContainer{
+    position: fixed;
+    z-index: 4;
+    padding:10px;
+}
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
+.links:hover {
+    background-color:#eee;
+    color: white;
+    cursor: pointer;
+  }
+  
 
 /*Band*/
 #tab-band{
     display: flex;
-    flex-direction: row;
     align-items: center;
-
+    flex-direction: row;
 }
-#text-band, #image-band{
+#text-band, #image-band, #image-band1{
     padding: 0px;
     border-radius: 25px;
     height:500px;
     width:600px;
     background-color:yellow;
     margin:10px;
-
+    flex:1;
 }
+
+#image-band:hover{
+    opacity:0;
+    cursor: pointer;
+}
+#image-band{
+    position: absolute;
+    z-index: 2;
+}
+#image-band1{
+    position: relative;
+}
+
 
 #text-band{
     background-color:yellow;
@@ -98,7 +97,13 @@ h3 {
     flex-direction: row-reverse;
     justify-content:flex-end;
     padding:10px;
-
+}
+#tab-gigs, #tab-music{
+    background-image: url('./Images/bandgreenbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
 }
 #logo-images{
     display: flex;
@@ -152,14 +157,31 @@ audio{
         color: black;
         text-decoration: none;
 }
-#text-merch, #merch-image{
+#text-merch{
+    flex-grow: 2;
+}
+
+
+#text-merch, #merchOriginal, #merchOnHover {
     padding: 0px;
     border-radius: 25px;
     height:500px;
-    width:600px;
+    width:400px;
     background-color:yellow;
     margin:10px;
 
+  }
+
+#merchOriginal:hover{
+    opacity:0;
+    cursor: pointer;
 }
+#merchOnHover{
+    position: absolute;
+}
+#merchOriginal{
+    position: relative;
+}
+
 /*Band*/
 
