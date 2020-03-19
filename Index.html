@@ -5,29 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project Culture</title>
-    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
     <link rel="icon" href="./Images/logo.png">
 
 </head>
 <body>
-    <section class="headerContainer" id="tab-home">
+    <section class="tabs" id="tab-home">
         <div class="linksContainer">
-            <button class="links" id="bandLink" onclick="window.location.href='#tab-band'">Band</button>
+            <button class="links" id="bandlink" onclick="window.location.href='#tab-band'">Band</button>
             <button class="links" id="musiclink" onclick="window.location.href='#tab-music'">Music</button>
             <button class="links" id="gigslink" onclick="window.location.href='#tab-gigs'">Gigs</button>
             <button class="links" id="merchlink" onclick="window.location.href='#tab-merch'">Merch</button>
-            <button class="links" id="homeLink" onclick="window.location.href='#tab-home'">Home</button>
+            <button class="links" id="homelink" onclick="window.location.href='#tab-home'">Home</button>
         </div>
         <div class="titlesContainer">
-                <h1>Project Culture</h1>
+            <h1>Project Culture</h1>
         </div>
     </section>
-    <section class="tabsContainer">
-        <section class="tabs" id="tab-band">
+    <section class="tabs" id="tab-band">
             <div id="text-band">
                 <h1 id="title-band">Meet The Band</h1>
-                <h3 id="description-band">Indie Rock band from London, combining a melodic jangle-pop sound with frenzied and impassioned lyrics.</h3>
+                <h3 id="description-band">
+                        Project Culture is an indie rock band from London that combines a melodic jangle-pop sound - indebted to bands like The Smiths, The Stone Roses, and The Velvet Underground - with frenzied and impassioned lyrics in the vein of Talking Heads, Arcade Fire, and
+                        Car Seat Headrest.<br><br>
+                       
+                       The band formed at Queen Mary University where singer and guitarist Gary Hill, out of frustration over the lack of a music scene on campus, started a music society that hosted live music nights at the university's student bar, and pubs in the area. The society
+                        helped create a close group of musicians, and through these friendships, he found the rest of the line-up.<br><br>
+                       
+                       Intending for 2020 to be a big year for them, the band plans to hit the ground running with the release of their debut single, the double a-side 'Character Actor/Guess I Think Too Much'. This will be the first of many releases this year, with the members being
+                        eager to demonstrate the vast range of genres present in their songs, as well as grow as a live band.<br><br>
+                        Gary Hill - Guitar and Vocals <br>
+                        Jamie Richardson - Bass <br>
+                        Peter Stanley - Guitar and Vocals <br>
+                        Toby Cashman - Drums <br>
+                </h3>
             </div>
         <div id="bandImages">
             <img src="./images/bandimage.jpeg" alt="project culture" id="image-band"/>
@@ -49,14 +62,14 @@
                                     </audio>
                         </div>
                         <div id="song2">
-                                <h3>Character Actor</h3>
+                                <h3>I Guess I Think Too Much</h3>
                                     <img src="./images/album.jpeg" alt="album-cover">
                                     <audio controls>
-                                            <source src="./audio/characterActor.mp3" type="audio/mpeg">
+                                            <source src="./audio/Guess I Think Too Much.wav" type="audio/mpeg">
                                           Your browser does not support the audio element.
                                     </audio>
                         </div>
-                        <div id="song3">
+                       <div id="song3">
                                 <h3>Character Actor</h3>
                                     <img src="./images/album.jpeg" alt="album-cover">
                                     <audio controls>
@@ -71,7 +84,7 @@
                                             <source src="./audio/characterActor.mp3" type="audio/mpeg">
                                           Your browser does not support the audio element.
                                     </audio>
-                        </div>
+                        </div> 
                 </div>
         </section>
         <section class="tabs" id="tab-gigs">
@@ -80,7 +93,7 @@
                         <h1>Gigs</h1>
                         <h3>Come see us play at...</h3>
                     </div>
-                    <div id="gigs-info">
+                   <!-- <div id="gigs-info">
                         <div id="gig1">
                             <h3>Drapers</h3>
                             <h4>10th April</h4>
@@ -98,8 +111,12 @@
                                 <h4>10th April</h4>
                                 <img src="./images/gig3.jpg" alt="gig" width="100px" height="100px"/>
                                 <a href="https://en-gb.facebook.com/ProjectCulture/" target="_blank"><h4>Link</h4></a>
-                        </div>
+                        </div> 
+                    </div> -->
+                    <div>
+                        <h3>We don't have any gigs at the moment, but we are doing some recording so keep those ears up!</h3>
                     </div>
+
                 </div>
                 <div id="logo-images">
                     <a href="https://soundcloud.com/projectculture" target="_blank"><img src="./Images/soundcloud.png" alt="souncloud" id="logo-image"/></a>
@@ -110,7 +127,7 @@
         </section>
         <section class="tabs" id="tab-merch">
                 <div id="text-merch">
-                    <h1>Merch</h1>
+                    <h1>Merchandise</h1>
                     <a id="buy-merch" href="https://projectculture.bandcamp.com/merch/t-shirt" target="_blank"><h3>Buy a t-shirt!</h3></a>
                 </div>
                 <div id="merchImages">
@@ -118,8 +135,6 @@
                     <img src="./images/outermerch.jpg" alt="t-shirt" id="merchOnHover"/>
                     <img src="./Images/innermerch.jpg .jpeg" alt="t-shirt" id="merchOriginal"></a>
                 </div>
-        </section>
-    </section>
-    
+        </section>    
 </body>
 </html>
