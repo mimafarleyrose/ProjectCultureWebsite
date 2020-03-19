@@ -1,5 +1,8 @@
 body {
-    font-family: "lora", 'Lato', sans-serif;  
+    font-family: 'Liu Jian Mao Cao', cursive;
+    background-color: darkgrey;
+    padding: 0px 0px;
+    margin:0px 0px;
 }
 h1 {
     font-size: 3rem;
@@ -7,8 +10,6 @@ h1 {
 h3 {
     font-size: 1rem;
 }   
-
-
 
 .headerContainer,
 .tabs {
@@ -20,19 +21,18 @@ h3 {
 	text-align: center;
     padding: 0 2em;
 }
-.tabs{
-    background: #eee;
-}
-.headerContainer{
+#tab-home, #tab-music, #tab-gigs{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-position: top;
-        background-image:url('./Images/bandpurplebackground.jpg');
         width: 100%;
         height: 100vh;
         background-size: 100%;
     }
+#tab-home{
+    background-image:url('./Images/bandpurplebackground.jpg');
+}
 /* links */
 .links{
     letter-spacing: 0.1rem;
@@ -66,8 +66,8 @@ button:focus, input[type="button"]:focus {
     height:500px;
     width:600px;
     background-color:yellow;
-    margin:10px;
     flex:1;
+    margin:10px;
 }
 
 #image-band:hover{
@@ -99,11 +99,7 @@ button:focus, input[type="button"]:focus {
     padding:10px;
 }
 #tab-gigs, #tab-music{
-    background-image: url('./Images/bandgreenbackground.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
+    background-image:url('./Images/bandgreenbackground.jpg');
 }
 #logo-images{
     display: flex;
