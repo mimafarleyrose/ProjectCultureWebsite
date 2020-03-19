@@ -8,6 +8,15 @@ body {
 h3 {
     font-size: 1rem;
 }   
+a:hover{
+    text-decoration: none;
+    color: inherit
+
+}
+a{
+    text-decoration: none;
+    color: inherit
+}
 .titlesContainer{
     font-size: 4rem;
     color:red;
@@ -152,6 +161,9 @@ h3 {
 #image-band1{
     position: relative;
 }
+#title-band{
+    font-size: 2em;
+}
 
 
 #text-band{
@@ -178,6 +190,12 @@ h3 {
 #logo-image{
     width:80px;
     height:100px;
+    border-radius: 25px;
+    padding: 5px;
+}
+#insta-image{
+    width:85px;
+    height:105px;
     border-radius: 25px;
 }
 #gigs-text{
@@ -207,6 +225,16 @@ h3 {
 audio{
     outline:none;
 }
+#music-title{
+    font-size: 2em;
+    color:red;
+}
+#article-link{
+    font-size: 1.4em;
+    color:red;
+    padding:10px;
+}
+
 /*Merch*/
 #tab-merch{
     display: flex;
