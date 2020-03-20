@@ -1,8 +1,8 @@
 body {
-    background-color:hsla(0,100%,50%,0.5);
+    background-color:#2d042e;
     padding: 0px 0px;
     margin:0px 0px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 h3 {
@@ -19,7 +19,8 @@ a{
 }
 .titlesContainer{
     font-size: 4rem;
-    color:red;
+    color:#b91595;
+    text-shadow: 2px 2px #2d042e;
     padding: 200px;
 }
 .tabs {
@@ -55,19 +56,24 @@ a{
     padding-top:10px;
 }
 #bandlink{
-    color:blue;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
 }
 #musiclink{
-    color:pink;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
 }
 #gigslink{
-    color:green;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
 }
 #merchlink{
-    color:yellow;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
 }
 #homelink{
-    color:red;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
 }
 
 .links {
@@ -124,6 +130,7 @@ a{
     transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+    outline:none;
   }
   .links:hover:before,
   .links:focus:before {
@@ -145,8 +152,13 @@ a{
     border-radius: 25px;
     height:500px;
     width:600px;
-    background-color:yellow;
+    background-color:#b91595;
     flex:1;
+    margin:10px;
+}
+#text-band, #image-band, #image-band1{
+    padding: 0px;
+    border-radius: 25px;
     margin:10px;
 }
 
@@ -162,12 +174,12 @@ a{
     position: relative;
 }
 #title-band{
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 
 #text-band{
-    background-color:yellow;
+    background-color:#b91595;
 }
 #description-band{
     padding:15px;
@@ -191,15 +203,15 @@ a{
     width:80px;
     height:100px;
     border-radius: 25px;
-    padding: 5px;
 }
 #insta-image{
     width:85px;
     height:105px;
     border-radius: 25px;
 }
+
 #gigs-text{
-    background-color: yellow;
+    background-color: #16b42b;
     justify-self:stretch;
     border-radius:25px;
     flex-grow:2;
@@ -216,7 +228,7 @@ a{
 #songContainer{
     display:flex;
     flex-direction:row;
-    background-color:yellow;
+    background-color:#16b42b;
     padding:10px;
     border-radius:15px;
     margin-right:70px;
@@ -227,11 +239,14 @@ audio{
 }
 #music-title{
     font-size: 2em;
-    color:red;
+    color:#16b42b;
+    text-shadow: 2px 2px #025811;
+
 }
 #article-link{
     font-size: 1.4em;
-    color:red;
+    color:#16b42b;
+    text-shadow: 1px 1px #025811;
     padding:10px;
 }
 
@@ -242,11 +257,7 @@ audio{
     align-items: center;
 
 }
-#merch-titles{
-    border-radius:15px;
-    background-color:yellow;
-    padding:10px;
-}
+
 #buy-merch{
         color: black;
         text-decoration: none;
@@ -264,7 +275,7 @@ audio{
     border-radius: 25px;
     height:500px;
     width:400px;
-    background-color:yellow;
+    background-color:#b91595;
     margin:10px;
 
   }
@@ -279,6 +290,15 @@ audio{
 #merchOriginal{
     position: relative;
 }
+.merch-album{
+    padding-top: 20px;
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+}
 
 /*Band*/
 
+#sign-off{
+    margin: 5px;
+}
