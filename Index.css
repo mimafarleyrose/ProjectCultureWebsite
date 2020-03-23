@@ -1,9 +1,7 @@
 body {
     background-color:#2d042e;
     padding: 0px 0px;
-    margin-left:0px;
-    margin-right:0px;
-    margin-top: 0px;
+    margin:0px 0px;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -160,7 +158,6 @@ a{
     margin:10px;
 }
 #text-band, #image-band, #image-band1{
-    padding-right:20px;
     border-radius: 25px;
 }
 
