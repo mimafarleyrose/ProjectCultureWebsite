@@ -42,7 +42,7 @@ a{
         background-size: 100%;
     }
 .tabs{
-    background-image:url('/ProjectCultureWebsite/Images/bandpurplebackground.jpg');
+    background-image:url('./Images/bandpurplebackground.jpg');
 }
 /* links */
 .links{
