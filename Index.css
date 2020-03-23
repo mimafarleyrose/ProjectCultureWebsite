@@ -1,7 +1,9 @@
 body {
     background-color:#2d042e;
     padding: 0px 0px;
-    margin:0px 0px;
+    margin-left: 30px;
+    margin-right:30px;
+    margin-top: 0px;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -32,7 +34,7 @@ a{
 	text-align: center;
     padding: 0 2em;
 }
-#tab-home, #tab-music, #tab-gigs{
+.tabs{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -41,7 +43,7 @@ a{
         height: 100vh;
         background-size: 100%;
     }
-#tab-home{
+.tabs{
     background-image:url('./Images/bandpurplebackground.jpg');
 }
 /* links */
@@ -152,7 +154,7 @@ a{
     border-radius: 25px;
     height:500px;
     width:600px;
-    background-color:#b91595;
+    background: rgba(185,21,149,0.5);
     flex:1;
     margin:10px;
 }
@@ -179,7 +181,7 @@ a{
 
 
 #text-band{
-    background-color:#b91595;
+    background: rgba(185,21,149,0.7);
 }
 #description-band{
     padding:15px;
@@ -189,35 +191,32 @@ a{
 /*gigs*/
 #tab-gigs{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content:flex-end;
-}
-#tab-gigs, #tab-music{
-    background-image:url('./Images/bandgreenbackground.jpg');
+    flex-direction: column;
+    justify-content:center;
 }
 #logo-images{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-top:20px;
 }
 #logo-image{
-    width:80px;
+    width:100px;
     height:100px;
     border-radius: 25px;
+    padding:5px;
 }
 #insta-image{
-    width:85px;
-    height:105px;
+    width:112px;
+    height:112px;
     border-radius: 25px;
 }
 
 #gigs-text{
-    background-color: #16b42b;
+    background:rgba(185,21,149,0.7);
     justify-self:stretch;
     border-radius:25px;
-    flex-grow:2;
-    margin:20px;
-    margin-right:70px;
-}
+    padding:10px;}
+
 #gigs-info{
     display:flex;
     flex-direction:row;
@@ -228,26 +227,37 @@ a{
 #songContainer{
     display:flex;
     flex-direction:row;
-    background-color:#16b42b;
+    background:rgba(185,21,149,0.7);
     padding:10px;
     border-radius:15px;
-    margin-right:70px;
 
+}
+.album-cover{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
 }
 audio{
     outline:none;
 }
 #music-title{
     font-size: 2em;
-    color:#16b42b;
-    text-shadow: 2px 2px #025811;
+    color:#b91595;
+    text-shadow: 2px 2px #2d042e;
 
 }
 #article-link{
     font-size: 1.4em;
-    color:#16b42b;
-    text-shadow: 1px 1px #025811;
+    color:palevioletred;
+    text-shadow: 1px 1px #960e7f;
     padding:10px;
+}
+.songs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:5px;
 }
 
 /*Merch*/
@@ -275,7 +285,7 @@ audio{
     border-radius: 25px;
     height:500px;
     width:400px;
-    background-color:#b91595;
+    background:rgba(185,21,149,0.7);
     margin:10px;
 
   }
@@ -299,6 +309,3 @@ audio{
 
 /*Band*/
 
-#sign-off{
-    margin: 5px;
-}
