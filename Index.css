@@ -30,7 +30,7 @@ a{
     height: 100vh;
     position: relative;
 	text-align: center;
-    padding: 0 2em;
+    padding: 2em;
 }
 .tabs{
         background-repeat: no-repeat;
@@ -282,6 +282,7 @@ audio{
     height:500px;
     width:400px;
     background:rgba(185,21,149,0.7);
+    margin-left: 10px;
 
   }
 
