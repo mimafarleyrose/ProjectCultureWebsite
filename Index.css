@@ -44,7 +44,7 @@ a{
         background-size: 100%;
     }
 .tabs{
-    background-image:url('./Images/bandpurplebackground.jpg');
+    background-image:url('/ProjectCultureWebsite/Images/bandpurplebackground.jpg');
 }
 /* links */
 .links{
@@ -148,6 +148,7 @@ a{
     display: flex;
     align-items: center;
     flex-direction: row;
+
 }
 #text-band, #image-band, #image-band1{
     padding: 0px;
