@@ -3,8 +3,11 @@ body {
     padding: 0px 0px;
     margin:0px 0px;
     font-family: 'Montserrat', sans-serif;
-
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
 }
+
 h3 {
     font-size: 1rem;
 }   
@@ -42,7 +45,7 @@ a{
         background-size: 100%;
     }
 .tabs{
-    background-image:url('/ProjectCultureWebsite/Images/bandpurplebackground.jpg');
+    background-image:url('./Images/bandpurplebackground.jpg');
 }
 /* links */
 .links{
@@ -168,9 +171,11 @@ a{
 #image-band{
     position: absolute;
     z-index: 2;
+    margin-right: 70px;
 }
 #image-band1{
     position: relative;
+    margin-right: 70px;
 }
 #title-band{
     font-size: 1.7em;
@@ -271,6 +276,8 @@ audio{
 }
 #text-merch{
     flex-grow: 2;
+    margin-right: 70px;
+
 }
 #text-merch h1{
     font-size: 3em;
@@ -282,7 +289,7 @@ audio{
     height:500px;
     width:400px;
     background:rgba(185,21,149,0.7);
-    margin: 10px;
+    margin-left:20px;
 
   }
 
