@@ -1,314 +1,327 @@
 body {
-    background-color:#2d042e;
-    padding: 0px 0px;
-    margin:0px 0px;
-    font-family: 'Montserrat', sans-serif;
-    height:100%;
-    width:100%;
-    overflow-x: hidden;
+  background-color: #2d042e;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h3 {
-    font-size: 1rem;
-}   
-a:hover{
-    text-decoration: none;
-    color: inherit
-
+  font-size: 1rem;
 }
-a{
-    text-decoration: none;
-    color: inherit
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
-.titlesContainer{
-    font-size: 4rem;
-    color:#b91595;
-    text-shadow: 2px 2px #2d042e;
-    padding: 200px;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.titlesContainer {
+  font-size: 4rem;
+  color: #b91595;
+  text-shadow: 2px 2px #2d042e;
+  padding: 200px;
 }
 .tabs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-	text-align: center;
-    padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 2em;
 }
-.tabs{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: top;
-        width: 100%;
-        height: 100vh;
-        background-size: 100%;
-    }
-.tabs{
-    background-image:url('./Images/bandpurplebackground.jpg');
+.tabs {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+}
+.tabs {
+  background-image: url("./Images/bandpurplebackground.jpg");
 }
 /* links */
-.links{
-    letter-spacing: 0.1rem;
-    font-size: 1.5em;
-    border-radius:35px;
+.links {
+  letter-spacing: 0.1rem;
+  font-size: 1.5em;
+  border-radius: 35px;
 }
-.linksContainer{
-    position: fixed;
-    z-index: 4;
-    padding-top:10px;
+.linksContainer {
+  position: fixed;
+  z-index: 4;
+  padding-top: 10px;
 }
-#bandlink{
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
+#bandlink {
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
 }
-#musiclink{
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
+#musiclink {
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
 }
-#gigslink{
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
+#gigslink {
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
 }
-#merchlink{
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
+#merchlink {
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
 }
-#homelink{
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
+#homelink {
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
 }
 
 .links {
-    margin: 0;
-    padding: 0;
-    border-width: 0;
-    border-color: transparent;
-    background: transparent;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
-    font-size: 30px;
-    font-family: inherit;
-    padding: 5px 12px;
-    overflow: hidden;
-    border-width: 0;
-    border-radius: 0;
-    background: transparent;
-    letter-spacing: 0;
-    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-  .links:after,
-  .links:before {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    content: '';
-    opacity: 0.65;
-    -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  .links:after {
-    top: 0;
-  }
-  .links:before {
-    bottom: 0;
-  }
-  .links:hover,
-  .links:focus {
-    letter-spacing: 2px;
-    opacity: 0.9;
-    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-  .links:hover:after,
-  .links:focus:after {
-    opacity: 1;
-    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    outline:none;
-  }
-  .links:hover:before,
-  .links:focus:before {
-    opacity: 1;
-    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }  
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 30px;
+  font-family: inherit;
+  padding: 5px 12px;
+  overflow: hidden;
+  border-width: 0;
+  border-radius: 0;
+  background: transparent;
+  letter-spacing: 0;
+  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.links:after,
+.links:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  opacity: 0.65;
+  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.links:after {
+  top: 0;
+}
+.links:before {
+  bottom: 0;
+}
+.links:hover,
+.links:focus {
+  letter-spacing: 2px;
+  opacity: 0.9;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.links:hover:after,
+.links:focus:after {
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  outline: none;
+}
+.links:hover:before,
+.links:focus:before {
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 /*Band*/
-#tab-band{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-
+#tab-band {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-#text-band, #image-band, #image-band1{
-    padding: 0px;
-    border-radius: 25px;
-    height:500px;
-    width:600px;
-    background: rgba(185,21,149,0.5);
-    flex:1;
-    margin:10px;
+#text-band,
+#image-band,
+#image-band1 {
+  padding: 0px;
+  border-radius: 25px;
+  height: 500px;
+  width: 600px;
+  background: rgba(185, 21, 149, 0.5);
+  flex: 1;
+  margin: 10px;
 }
-#text-band, #image-band, #image-band1{
-    border-radius: 25px;
-}
-
-#image-band:hover{
-    opacity:0;
-    cursor: pointer;
-}
-#image-band{
-    position: absolute;
-    z-index: 2;
-    margin-right: 70px;
-}
-#image-band1{
-    position: relative;
-    margin-right: 70px;
-}
-#title-band{
-    font-size: 1.7em;
+#text-band,
+#image-band,
+#image-band1 {
+  border-radius: 25px;
 }
 
-
-#text-band{
-    background: rgba(185,21,149,0.7);
+#image-band:hover {
+  opacity: 0;
+  cursor: pointer;
 }
-#description-band{
-    padding:15px;
+#image-band {
+  position: absolute;
+  z-index: 2;
+  margin-right: 70px;
+}
+#image-band1 {
+  position: relative;
+  margin-right: 70px;
+}
+#title-band {
+  font-size: 1.7em;
 }
 
+#text-band {
+  background: rgba(185, 21, 149, 0.7);
+}
+#description-band {
+  padding: 15px;
+}
 
 /*gigs*/
-#tab-gigs{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+#tab-gigs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-#logo-images{
-    display: flex;
-    flex-direction: row;
-    padding-top:20px;
+#logo-images {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
 }
-#logo-image{
-    width:100px;
-    height:100px;
-    border-radius: 25px;
-    padding:5px;
+#logo-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  padding: 5px;
 }
-#insta-image{
-    width:112px;
-    height:112px;
-    border-radius: 25px;
+#insta-image {
+  width: 112px;
+  height: 112px;
+  border-radius: 25px;
 }
 
-#gigs-text{
-    background:rgba(185,21,149,0.7);
-    justify-self:stretch;
-    border-radius:25px;
-    padding:10px;}
+#gigs-text {
+  background: rgba(185, 21, 149, 0.7);
+  justify-self: stretch;
+  border-radius: 25px;
+  padding: 10px;
+}
 
-#gigs-info{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+#gigs-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*music*/
-#songContainer{
-    display:flex;
-    flex-direction:row;
-    background:rgba(185,21,149,0.7);
-    padding:10px;
-    border-radius:15px;
-
+#songContainer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(185, 21, 149, 0.7);
+  padding: 10px;
+  border-radius: 15px;
 }
-.album-cover{
-    border-radius: 150px;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
+.album-cover {
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
 }
-audio{
-    outline:none;
+audio {
+  outline: none;
 }
-#music-title{
-    font-size: 2em;
-    color:#b91595;
-    text-shadow: 2px 2px #2d042e;
-
+#music-title {
+  font-size: 2em;
+  color: #b91595;
+  text-shadow: 2px 2px #2d042e;
 }
-#article-link{
-    font-size: 1.4em;
-    color:palevioletred;
-    text-shadow: 1px 1px #960e7f;
-    padding:10px;
+#article-link,
+#interview-link {
+  font-size: 1.4em;
+  color: palevioletred;
+  text-shadow: 1px 1px #960e7f;
+  padding: 10px;
 }
-.songs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left:5px;
+.songs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
 }
 
 /*Merch*/
-#tab-merch{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-
+#tab-merch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
-#buy-merch{
-        color: black;
-        text-decoration: none;
+#buy-merch {
+  color: black;
+  text-decoration: none;
 }
-#text-merch{
-    flex-grow: 2;
-    margin-right: 70px;
+#text-merch {
+  flex-grow: 2;
+  margin-right: 70px;
+}
+#text-merch h1 {
+  font-size: 3em;
+}
 
-}
-#text-merch h1{
-    font-size: 3em;
+#text-merch,
+#merchOriginal,
+#merchOnHover {
+  border-radius: 25px;
+  height: 500px;
+  width: 400px;
+  background: rgba(185, 21, 149, 0.7);
+  margin-left: 20px;
 }
 
-
-#text-merch, #merchOriginal, #merchOnHover {
-    border-radius: 25px;
-    height:500px;
-    width:400px;
-    background:rgba(185,21,149,0.7);
-    margin-left:20px;
-
-  }
-
-#merchOriginal:hover{
-    opacity:0;
-    cursor: pointer;
+#merchOriginal:hover {
+  opacity: 0;
+  cursor: pointer;
 }
-#merchOnHover{
-    position: absolute;
+#merchOnHover {
+  position: absolute;
 }
-#merchOriginal{
-    position: relative;
+#merchOriginal {
+  position: relative;
 }
-.merch-album{
-    padding-top: 20px;
-    width:200px;
-    height: 200px;
-    border-radius: 100px;
+.merch-album {
+  padding-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
 }
 
 /*Band*/
 
+#interview-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+#interview {
+  border-radius: 25px;
+  background-color: palevioletred;
+  padding: 20px;
+  text-align: center;
+}
+#interview-link-spotify {
+  text-decoration: underline;
+}
