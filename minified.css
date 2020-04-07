@@ -1,0 +1,305 @@
+body {
+  background-color: #2d042e;
+  padding: 0 0;
+  margin: 0 0;
+  font-family: Montserrat, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+h3 {
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.titlesContainer {
+  font-size: 4rem;
+  color: #b91595;
+  text-shadow: 2px 2px #2d042e;
+  padding: 200px;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 2em;
+}
+.tabs {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+}
+.tabs {
+  background-image: url(Images/bandpurplebackground.jpg);
+}
+.links {
+  letter-spacing: 0.1rem;
+  font-size: 1.5em;
+  border-radius: 35px;
+}
+.linksContainer {
+  position: fixed;
+  z-index: 4;
+  padding-top: 10px;
+}
+#bandlink {
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+}
+#musiclink {
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+}
+#gigslink {
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+}
+#merchlink {
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+}
+#homelink {
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+}
+.links {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: 0 0;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 30px;
+  font-family: inherit;
+  padding: 5px 12px;
+  overflow: hidden;
+  border-width: 0;
+  border-radius: 0;
+  background: 0 0;
+  letter-spacing: 0;
+  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.links:after,
+.links:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  opacity: 0.65;
+  -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.links:after {
+  top: 0;
+}
+.links:before {
+  bottom: 0;
+}
+.links:focus,
+.links:hover {
+  letter-spacing: 2px;
+  opacity: 0.9;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.links:focus:after,
+.links:hover:after {
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  outline: 0;
+}
+.links:focus:before,
+.links:hover:before {
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#tab-band {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#image-band,
+#image-band1,
+#text-band {
+  padding: 0;
+  border-radius: 25px;
+  height: 500px;
+  width: 600px;
+  background: rgba(185, 21, 149, 0.5);
+  flex: 1;
+  margin: 10px;
+}
+#image-band,
+#image-band1,
+#text-band {
+  border-radius: 25px;
+}
+#image-band:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+#image-band {
+  position: absolute;
+  z-index: 2;
+  margin-right: 70px;
+}
+#image-band1 {
+  position: relative;
+  margin-right: 70px;
+}
+#title-band {
+  font-size: 1.7em;
+}
+#text-band {
+  background: rgba(185, 21, 149, 0.7);
+}
+#description-band {
+  padding: 15px;
+}
+#tab-gigs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#logo-images {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+#logo-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  padding: 5px;
+}
+#insta-image {
+  width: 112px;
+  height: 112px;
+  border-radius: 25px;
+}
+#gigs-text {
+  background: rgba(185, 21, 149, 0.7);
+  justify-self: stretch;
+  border-radius: 25px;
+  padding: 10px;
+}
+#gigs-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#songContainer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(185, 21, 149, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+}
+.album-cover {
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+audio {
+  outline: 0;
+}
+#music-title {
+  font-size: 2em;
+  color: #b91595;
+  text-shadow: 2px 2px #2d042e;
+}
+#article-link,
+#interview-link {
+  font-size: 1.4em;
+  color: #db7093;
+  text-shadow: 1px 1px #960e7f;
+  padding: 10px;
+}
+.songs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+}
+#tab-merch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#buy-merch {
+  color: #000;
+  text-decoration: none;
+}
+#text-merch {
+  flex-grow: 2;
+  margin-right: 70px;
+}
+#text-merch h1 {
+  font-size: 3em;
+}
+#merchOnHover,
+#merchOriginal,
+#text-merch {
+  border-radius: 25px;
+  height: 500px;
+  width: 400px;
+  background: rgba(185, 21, 149, 0.7);
+  margin-left: 20px;
+}
+#merchOriginal:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+#merchOnHover {
+  position: absolute;
+}
+#merchOriginal {
+  position: relative;
+}
+.merch-album {
+  padding-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+#interview-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+#interview {
+  border-radius: 25px;
+  background-color: #db7093;
+  padding: 20px;
+  text-align: center;
+}
+#interview-link-spotify {
+  text-decoration: underline;
+}
